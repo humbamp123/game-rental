@@ -6,6 +6,8 @@ https://github.com/humbamp123/game_rental/assets/20910111/cb5c6226-834f-4872-9fd
 
 ## Getting Started
 
+Make sure Node version [18.17](https://nodejs.org/en) or later is installed.
+
 Go to the [Giant Bomb API](https://www.giantbomb.com/api/) for an API key.
 
 
