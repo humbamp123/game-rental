@@ -25,11 +25,15 @@ export default async function Page({ searchParams }) {
         <SearchBar />
       </Suspense>
       <PaginationComponent />
-      <div className='grid gap-1 grid-cols-1 md:grid-cols-4'>
-        {
-          !!games ? games?.map(game => <GameCard key={game.id} game={game} />) : <div>loading</div>
-        }
-      </div>
+      {
+        !!games && games.length != 0 ?
+          games?.map(game =>
+            <div className='grid gap-1 grid-cols-1 md:grid-cols-4'>
+              <GameCard key={game.id} game={game} />
+            </div>
+          ) :
+          <div className='flex justify-center'>No game matches your search :(</div>
+      }
       <PaginationComponent />
     </div>
   );
