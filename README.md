@@ -24,7 +24,7 @@ Next, install all the required dependencies by running:
 npm i
 ```
 
-### Running the Project
+### Running the Project in Dev
 
 For development purposes, execute the following command:
 
@@ -38,7 +38,10 @@ Then open your browser and navigate to the following address:
 http://localhost:3000
 
 ```
-Alternatively, build and start the server for a faster app experience by following the subsequent steps:
+
+### Building and Running a Local Production Version
+
+Build and start the server for a faster app experience by following the subsequent steps:
 
 Create a production build:
 
@@ -50,6 +53,28 @@ Initiate the production build:
 
 ```
 npm run start
+```
+
+Open your browser and navigate to the following address:
+
+```
+http://localhost:3000
+```
+
+### Dockerize and Run in Docker
+
+To build and start the server in [Docker](https://www.docker.com/products/docker-desktop/), make sure Docker is installed and running.
+
+Build the Docker image:
+
+```
+docker build -t game-rental .
+```
+
+Run the Docker container:
+
+```
+docker run -p 3000:3000 game-rental
 ```
 
 Open your browser and navigate to the following address:

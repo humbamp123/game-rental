@@ -24,5 +24,6 @@ module.exports = {
                 hostname: 'www.giantbomb.com',
             }
         ]
-    }
+    },
+    output: process.env.BUILD_STANDALONE === "true" ? "standalone" : undefined,
 };
