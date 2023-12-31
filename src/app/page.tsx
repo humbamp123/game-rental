@@ -2,13 +2,13 @@ import Link from 'next/link';
 import { lusitana } from '@/features/fonts';
 import Image from 'next/image';
 
-import GiantBombRentalsLogo from '@/features/giant-bomb-logo';
+import GiantBombLogo from '@/features/GiantBombLogo';
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col p-6">
       <div className="flex h-20 items-end justify-center rounded-lg bg-slate-600 p-4 md:h-40">
-        <GiantBombRentalsLogo />
+        <GiantBombLogo />
       </div>
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-slate-50 px-6 py-10 md:w-2/5 md:px-20">

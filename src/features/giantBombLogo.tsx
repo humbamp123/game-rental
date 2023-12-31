@@ -1,7 +1,7 @@
 import { lusitana } from '@/features/fonts';
 import Image from 'next/image';
 
-export default function GiantBombRentalsLogo() {
+export default function GiantBombLogo() {
   return (
     <div className={`${lusitana.className} flex w-32 text-white md:w-40`}>
       <div className={`flex flex-col items-center leading-none hidden md:block`} >

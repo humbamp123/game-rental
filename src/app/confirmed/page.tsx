@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import GiantBombRentalsLogo from '@/features/giant-bomb-logo';
+import GiantBombLogo from '@/features/GiantBombLogo';
 import ContactCard from '@/features/confirmed/ContactCard';
 import AddressCard from '@/features/confirmed/AddressCard';
 import PaymentCard from '@/features/confirmed/PaymentCard';
@@ -12,7 +12,7 @@ export default function Page() {
         prefetch={true}
         className="mb-2 flex h-20 justify-center rounded-md bg-slate-600 p-4 md:h-40"
         href="/search" >
-        <GiantBombRentalsLogo />
+        <GiantBombLogo />
       </Link>
       <div className='text-xl text-center font-bold'>
         Rental Order Confirmed

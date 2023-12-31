@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import NavLinks from '@/features/checkout/NavLinks';
 import Cart from '@/features/checkout/Cart';
-import GiantBombRentalsLogo from '@/features/giant-bomb-logo';
+import GiantBombLogo from '@/features/GiantBombLogo';
 import { CheckCircleIcon } from '@heroicons/react/24/outline';
 import { useConfirmedStore } from '@/store/useConfirmedStore';
 import { useContactForm, useShippingForm, useBillingForm, usePaymentForm } from "@/store/form";
@@ -47,7 +47,7 @@ export default function SideNav() {
         className="mb-2 flex h-20 items-end justify-center rounded-md bg-slate-600 p-4 md:h-40"
         href="/search"
       >
-        <GiantBombRentalsLogo />
+        <GiantBombLogo />
       </Link>
       <div className="flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2">
         <NavLinks />
