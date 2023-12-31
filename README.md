@@ -65,6 +65,13 @@ http://localhost:3000
 
 To build and start the server in [Docker](https://www.docker.com/products/docker-desktop/), make sure Docker is installed and running.
 
+
+Set your api key in the `.env.production` file as follows:
+
+```
+GIANT_BOMB_API_KEY=<YOUR_API_KEY>
+```
+
 Build the Docker image:
 
 ```
